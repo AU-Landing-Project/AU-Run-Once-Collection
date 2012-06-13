@@ -6,3 +6,4 @@ x.x:
 
  - initial release
  - widget manager 1.7 => 1.8 layout fix
+ - group operators 1.7 => group tools admin migration
