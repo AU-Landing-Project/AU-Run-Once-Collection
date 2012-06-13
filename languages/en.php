@@ -6,6 +6,17 @@ $english = array(
     'au_runonce:generic:success' => "Script ran successfully",
     
     /*
+     * Group operators => Group Tools migration of group admin
+     */
+    'au_runonce:group_operators_migration' => "Group Operators 1.7 => Group Tools 1.8 Migration",
+    'au_runonce:group_operators_description' => "Migrates multiple group admins managed by the group operators plugin in 1.7 to the Group Tools managed multiple-admins in 1.8",
+    'au_runonce:group_operators_runscript' => "Run Group Operators Migration",
+    'au_runonce:group_operator:relationship:fail' => "There was an issue converting operators to group admins",
+    'au_runonce:group_operator:relationship:success' => "Group operators converted to group admins successfully",
+    'au_runonce:group_operators:allow:fail' => "%s groups updated",
+    'au_runonce:group_operators:allow:success' => "%s groups updated",
+    
+    /*
      * Widget Manager Layout Fix
      */
     'au_runonce:wm_layout' => "Widget Manager Layout Fix 1.7 => 1.8",
