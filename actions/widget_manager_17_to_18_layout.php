@@ -47,6 +47,14 @@ $results[] = mb_move_column('mb_tmp_column', 3, 'groups');
 *
 *       Fix index widgets layout
 */
+// first move all index widgets from column 1 to a temporary non-existant column
+$results[] = mb_move_column(1, 'mb_tmp_column', 'index');
+
+// now move all index widgets from column 2 to column 1
+$results[] = mb_move_column(2, 1, 'index');
+
+// now move the tmp column widgets to column 2
+$results[] = mb_move_column('mb_tmp_column', 2, 'index');
 
 
 /*
