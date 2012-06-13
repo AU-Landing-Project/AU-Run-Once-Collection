@@ -1,0 +1,8 @@
+== Version History ==
+
+x.x:
+
+0.1:
+
+ - initial release
+ - widget manager 1.7 => 1.8 layout fix
