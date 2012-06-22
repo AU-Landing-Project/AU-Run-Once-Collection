@@ -22,6 +22,13 @@ $english = array(
     'au_runonce:wm_layout' => "Widget Manager Layout Fix 1.7 => 1.8",
     'au_runonce:wm_description' => "If an elgg 1.7 installation was using widget manager, and upgraded to 1.8 with widget manager the layout of the widgets was not conserved.  Specifically the columns were switched in various contexts.  This script will revert all site widgets to the original layout.",
     'au_runonce:wm_runscript' => "Run Widget Manager Layout Fix",
+    
+    // tagtracker 1.7  => au_tagtracker_widget 1.8
+    'au_runonce:tagtracker:upgrade' => "Tagtracker 1.7 => AU Tag Tracker Widget migration",
+    'au_runonce:tagtracker:upgrade:description' => "This script takes existing tagtracker widgets from 1.7 and converts them to AU Tag Tracker Widgets in 1.8 keeping relevant settings and setting sane defaults for AU options not available in 1.7 so that widget contents should be the same on upgrade.",
+    'au_runonce:tagtracker:upgrade:runscript' => "Run Tagtracker Upgrade Script",
+    'au_runonce:tagtracker:upgrade:success' => "%s widgets upgraded",
+    'au_runonce:tagtracker:upgrade:fail' => "%s widgets upgraded",
 );
 					
 add_translation("en",$english);

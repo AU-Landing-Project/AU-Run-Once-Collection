@@ -11,6 +11,9 @@ function au_runonce_init(){
   
   // updates group admins provided by group operators plugin in 1.7 to group tools multiple admins in 1.8
   elgg_register_action("au_runonce/group_operators_17_to_group_tools_18", elgg_get_plugins_path() . "au_runonce/actions/group_operators_17_to_group_tools_18.php", 'admin');
+  
+  // migrates 1.7 tagtracker widgets to 1.8 au_tagtracker_widgets
+  elgg_register_action("au_runonce/tagtracker_17_to_au_tag_tracker_widget_18", elgg_get_plugins_path() . "au_runonce/actions/tagtracker_17_to_au_tag_tracker_widget_18.php", 'admin');
 }
 
 elgg_register_event_handler('init', 'system', 'au_runonce_init');

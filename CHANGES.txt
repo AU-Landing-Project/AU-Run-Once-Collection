@@ -2,6 +2,9 @@
 
 x.x:
 
+0.2 (06/22/2012):
+ - added tagtracker => au_tagtracker_widget upgrade
+
 0.1:
 
  - initial release

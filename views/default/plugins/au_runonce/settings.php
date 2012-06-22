@@ -15,7 +15,11 @@ echo "<h4>" . elgg_echo('au_runonce:group_operators_migration') . "</h4>";
 echo elgg_echo('au_runonce:group_operators_description') . "<br><br>";
 echo elgg_view('output/confirmlink', array('text' => elgg_echo('au_runonce:group_operators_runscript'), 'href' => elgg_get_site_url() . 'action/au_runonce/group_operators_17_to_group_tools_18', 'class' => 'au_runonce_run_script'));
 
-
+echo "<br><br>";
+// tagtracker 1.7  => au_tagtracker_widget 1.8
+echo "<h4>" . elgg_echo('au_runonce:tagtracker:upgrade') . "</h4>";
+echo elgg_echo('au_runonce:tagtracker:upgrade:description') . "<br><br>";
+echo elgg_view('output/confirmlink', array('text' => elgg_echo('au_runonce:tagtracker:upgrade:runscript'), 'href' => elgg_get_site_url() . 'action/au_runonce/tagtracker_17_to_au_tag_tracker_widget_18', 'class' => 'au_runonce_run_script'));
 
 
 // just to push the unneccessary save input down a bit
