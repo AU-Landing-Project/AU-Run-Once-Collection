@@ -8,7 +8,7 @@ $db_prefix = elgg_get_config('dbprefix');
 
 // part 1 - update relationship name
 $q = "
-UPDATE {$db_prefix}entity_relationships
+UPDATE IGNORE {$db_prefix}entity_relationships
 SET relationship = 'group_admin'
 WHERE relationship = 'operator'
 ";
