@@ -14,6 +14,9 @@ function au_runonce_init(){
   
   // migrates 1.7 tagtracker widgets to 1.8 au_tagtracker_widgets
   elgg_register_action("au_runonce/tagtracker_17_to_au_tag_tracker_widget_18", elgg_get_plugins_path() . "au_runonce/actions/tagtracker_17_to_au_tag_tracker_widget_18.php", 'admin');
+  
+  // sets all groups to show public widgets (if closed group)
+  elgg_register_action("au_runonce/group_tools_set_all_groups_public_widgets", elgg_get_plugins_path() . "au_runonce/actions/group_tools_set_all_groups_public_widgets.php", 'admin');
 }
 
 elgg_register_event_handler('init', 'system', 'au_runonce_init');

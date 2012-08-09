@@ -29,6 +29,10 @@ $english = array(
     'au_runonce:tagtracker:upgrade:runscript' => "Run Tagtracker Upgrade Script",
     'au_runonce:tagtracker:upgrade:success' => "%s widgets upgraded",
     'au_runonce:tagtracker:upgrade:fail' => "%s widgets upgraded",
+    
+    // group tools enable widgets on all closed groups
+    'au_runonce:group_tools_widgets:upgrade' => "Enable widgets on all closed groups (for group_tools)",
+    'au_runonce:group_tools_widgets:description' => "Group tools allows closed groups to show widgets.  This script will turn this option on for all groups on the site.",
 );
 					
 add_translation("en",$english);

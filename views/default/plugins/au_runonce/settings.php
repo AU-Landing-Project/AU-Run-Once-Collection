@@ -21,6 +21,12 @@ echo "<h4>" . elgg_echo('au_runonce:tagtracker:upgrade') . "</h4>";
 echo elgg_echo('au_runonce:tagtracker:upgrade:description') . "<br><br>";
 echo elgg_view('output/confirmlink', array('text' => elgg_echo('au_runonce:tagtracker:upgrade:runscript'), 'href' => elgg_get_site_url() . 'action/au_runonce/tagtracker_17_to_au_tag_tracker_widget_18', 'class' => 'au_runonce_run_script'));
 
+echo "<br><br>";
+// Group tools - enable widgets on all closed groups
+echo "<h4>" . elgg_echo('au_runonce:group_tools_widgets:upgrade') . "</h4>";
+echo elgg_echo('au_runonce:group_tools_widgets:description') . "<br><br>";
+echo elgg_view('output/confirmlink', array('text' => elgg_echo('au_runonce:tagtracker:upgrade:runscript'), 'href' => elgg_get_site_url() . 'action/au_runonce/group_tools_set_all_groups_public_widgets', 'class' => 'au_runonce_run_script'));
+
 
 // just to push the unneccessary save input down a bit
 echo "<div style='height:300px'></div>";
