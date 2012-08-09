@@ -3,7 +3,7 @@
 $count = 0;
 function au_runonce_enable_widgets($result, $getter, $options){
   // $result is a group
-  $result->profile_widgets == "yes";
+  $result->profile_widgets = "yes";
   
   global $count;
   $count++;
