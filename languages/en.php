@@ -33,6 +33,7 @@ $english = array(
     // group tools enable widgets on all closed groups
     'au_runonce:group_tools_widgets:upgrade' => "Enable widgets on all closed groups (for group_tools)",
     'au_runonce:group_tools_widgets:description' => "Group tools allows closed groups to show widgets.  This script will turn this option on for all groups on the site.",
+    'au_runonce:group_tools_enable_widgets:upgrade:runscript' => "Run Closed Group Enable Widgets Script",
 );
 					
 add_translation("en",$english);

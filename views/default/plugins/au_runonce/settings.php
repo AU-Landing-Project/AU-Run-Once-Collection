@@ -25,7 +25,7 @@ echo "<br><br>";
 // Group tools - enable widgets on all closed groups
 echo "<h4>" . elgg_echo('au_runonce:group_tools_widgets:upgrade') . "</h4>";
 echo elgg_echo('au_runonce:group_tools_widgets:description') . "<br><br>";
-echo elgg_view('output/confirmlink', array('text' => elgg_echo('au_runonce:tagtracker:upgrade:runscript'), 'href' => elgg_get_site_url() . 'action/au_runonce/group_tools_set_all_groups_public_widgets', 'class' => 'au_runonce_run_script'));
+echo elgg_view('output/confirmlink', array('text' => elgg_echo('au_runonce:group_tools_enable_widgets:upgrade:runscript'), 'href' => elgg_get_site_url() . 'action/au_runonce/group_tools_set_all_groups_public_widgets', 'class' => 'au_runonce_run_script'));
 
 
 // just to push the unneccessary save input down a bit
