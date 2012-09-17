@@ -2,6 +2,11 @@
 
 x.x:
 
+0.3 (09/17/2012):
+ - removes php script time limits
+ - adds script to make all widgets visible in closed groups using group_tools
+ - adds script to remove all broken widgets (those without registered handlers)
+
 0.2 (06/22/2012):
  - added tagtracker => au_tagtracker_widget upgrade
 
