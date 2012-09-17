@@ -1,3 +1,10 @@
+<style>
+  /* hide unnecessary submit button */
+  .elgg-foot .elgg-button-submit {
+    display: none;
+  }
+</style>
+
 <?php
 
 // not really settings, but a convenient place to launch the scripts from
@@ -28,5 +35,10 @@ echo elgg_echo('au_runonce:group_tools_widgets:description') . "<br><br>";
 echo elgg_view('output/confirmlink', array('text' => elgg_echo('au_runonce:group_tools_enable_widgets:upgrade:runscript'), 'href' => elgg_get_site_url() . 'action/au_runonce/group_tools_set_all_groups_public_widgets', 'class' => 'au_runonce_run_script'));
 
 
-// just to push the unneccessary save input down a bit
-echo "<div style='height:300px'></div>";
+echo "<br><br>";
+// Remove broken widgets
+echo "<h4>" . elgg_echo('au_runonce:remove_broken_widgets') . "</h4>";
+echo elgg_echo('au_runonce:remove_broken_widgets:description') . "<br><br>";
+echo elgg_view('output/confirmlink', array('text' => elgg_echo('au_runonce:remove_broken_widgets:runscript'), 'href' => elgg_get_site_url() . 'action/au_runonce/remove_broken_widgets', 'class' => 'au_runonce_run_script'));
+
+echo "<br><br>";

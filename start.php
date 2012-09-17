@@ -17,6 +17,9 @@ function au_runonce_init(){
   
   // sets all groups to show public widgets (if closed group)
   elgg_register_action("au_runonce/group_tools_set_all_groups_public_widgets", elgg_get_plugins_path() . "au_runonce/actions/group_tools_set_all_groups_public_widgets.php", 'admin');
+  
+  // removes broken widgets
+  elgg_register_action("au_runonce/remove_broken_widgets", elgg_get_plugins_path() . "au_runonce/actions/remove_broken_widgets.php", 'admin');
 }
 
 elgg_register_event_handler('init', 'system', 'au_runonce_init');

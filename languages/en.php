@@ -34,6 +34,12 @@ $english = array(
     'au_runonce:group_tools_widgets:upgrade' => "Enable widgets on all closed groups (for group_tools)",
     'au_runonce:group_tools_widgets:description' => "Group tools allows closed groups to show widgets.  This script will turn this option on for all groups on the site.",
     'au_runonce:group_tools_enable_widgets:upgrade:runscript' => "Run Closed Group Enable Widgets Script",
+    
+    // remove broken widgets
+    'au_runonce:remove_broken_widgets:removed' => '%s broken widgets removed',
+    'au_runonce:remove_broken_widgets' => 'Remove Broken Widgets',
+    'au_runonce:remove_broken_widgets:description' => "Widgets that no longer have valid handlers persist in the database and can cause issues in some cases when ordering clashes cause a valid widget to disappear (noticeable in widget manager).  This script will remove any existing widgets that are no longer in the system.<br>WARNING - make sure you have all widget related plugins (that you want active) enabled before running this script.",
+    'au_runonce:remove_broken_widgets:runscript' => "Run the Broken Widget Removal Script?",
 );
 					
 add_translation("en",$english);
