@@ -1,5 +1,8 @@
 <?php
 
+// this could take a while...
+set_time_limit(0);
+
 $db_prefix = elgg_get_config('dbprefix');
 
 // overview

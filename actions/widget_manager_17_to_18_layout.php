@@ -1,5 +1,8 @@
 <?php
 
+// this could take a while...
+set_time_limit(0);
+
 // this does the heavy lifting
 // note that it's context sensitive in case the system has some other widgets
 // we don't know about - we know we need to fix dashboard/profile/index/groups

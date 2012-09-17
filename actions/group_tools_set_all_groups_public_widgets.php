@@ -1,5 +1,8 @@
 <?php
 
+// this could take a while...
+set_time_limit(0);
+
 $count = 0;
 function au_runonce_enable_widgets($result, $getter, $options){
   // $result is a group
